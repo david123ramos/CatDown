@@ -1,8 +1,8 @@
 {
-  "name": "backend",
+  "name": "catdown-cli",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,8 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
+    "yargs": "^15.4.1",
     "ytdl-core": "^3.2.1"
   }
 }

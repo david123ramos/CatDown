@@ -5,6 +5,8 @@ Baixa videos do YouTube de maneira rápida e direta.
 -Ter o [Node](https://nodejs.org/en/) instalado na máquina.
 
 #Modo de uso
+
+## Com GUI Web
 1 - baixar as dependências do projeto (dentro da pasta do backend) com
 ```
 npm install
@@ -18,4 +20,18 @@ node index.js
 
 4- Inserir o link do YouTube e ser feliz 😊
 
+## Modo CLI
+1- Baixar as dependências do projeto (dentro do diretório ``cli`)
+``$ npm install``
 
+2- Iniciar a aplicação
+
+**Exemplos:**
+
+Ajuda: ``node index.js --help``
+
+Salvando em arquivos: ``node index.js --url "https://www.youtube.com/watch?v=qrMwxe2ya5E" -o video.mp4``
+
+Salvando com stdout: ``node index.js --url "https://www.youtube.com/watch?v=qrMwxe2ya5E" > video.mp4``
+
+4- Ser feliz 😊
