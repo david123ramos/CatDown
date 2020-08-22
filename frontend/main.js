@@ -1,19 +1,19 @@
 const APIcred = {
-    url :  "http://localhost:4000/download?URL=",
+    url :  "http://localhost:4000/download?URL="
 }
 
+document.querySelector("#send").addEventListener("click", function(e) {
+    var query = document.querySelector("#url").value;
 
-document.querySelector("#send").addEventListener("click", function(e){
-    e.preventDefault();
+    if (query != '') {
+        e.preventDefault();
 
-    const query = document.querySelector("#url").value;
+        send(query);
 
-    send( query );
-
-
+        document.querySelector("#url").value = '';
+    }
 });
 
-
-function send( query ){
+function send(query) {
     window.location.href = APIcred.url+query; 
 }

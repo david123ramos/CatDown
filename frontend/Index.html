@@ -1,56 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<html lang="pt-BR">
+    <head>
+        <!-- Title -->
+        <title>CatDown</title>
 
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="shortcut icon" href="assets/images/3-search-cat_icon-icons.com_76679.ico" type="image/x-icon">
-    <title>CatDown</title>
-</head>
-<body>
+        <!-- Meta TAGS -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <div class="container">
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
 
-        <div class="row justify-content-center">
-            <div class="col-12" align="center"> 
-                <h3>CatDown</h3>
-                <svg class="imgMain" id="Layer_1" enable-background="new 0 0 511.909 511.909" height="512" viewBox="0 0 511.909 511.909" width="512" xmlns="http://www.w3.org/2000/svg">
-                    <g>
-                        <g>
-                            <path d="m414.661 426.387c.004 1.904 1.5 3.443 3.4 3.567 27.015 1.76 49.249 24.362 49.249 51.985v4.02c0 5.627-4.561 10.188-10.188 10.188h-42.626-188.957c-77.782 0-140.837-63.611-140.837-142.08 0-78.468 63.055-142.08 140.837-142.08h109.914c1.502 0 2.986-.332 4.345-.973l81.578-38.465c4.775-2.251 10.478-.482 13.141 4.076l35.867 55.58c-.393 42.796-16.984 82.772-45.891 112.061-6.388 6.472-9.983 15.192-9.963 24.285l.139 61.292" fill="#454040"/>
-                        </g>
-                        <path d="m424.492 344.266c28.907-29.289 45.499-69.265 45.891-112.061l-35.867-55.58c-2.663-4.558-8.366-6.327-13.141-4.076l-81.578 38.465c-1.359.641-2.843.973-4.345.973h-89.124v284.16h210.794c5.626 0 10.188-4.561 10.188-10.188v-4.02c0-27.624-22.235-50.226-49.249-51.986-1.9-.124-3.396-1.663-3.4-3.567l.008 3.457-.139-61.292c-.021-9.093 3.575-17.813 9.962-24.285z" fill="#2d2211"/>
-                        <g>
-                            <path d="m25.119 382.346c-16.198-17.753-25.119-41.671-25.119-67.35v-104.192c0-40.187 32.469-72.88 72.378-72.88 22.864 0 41.467-18.827 41.467-41.968v-41.595c0-8.322 6.395-15.483 14.708-15.875 8.876-.418 16.203 6.654 16.203 15.438v42.032c0 40.186-32.469 72.879-72.378 72.879-22.865 0-41.467 18.828-41.467 41.969v104.192c0 17.951 6.052 34.47 17.042 46.515 11.071 12.133 25.843 18.546 42.721 18.546 13.386 0 22.797 17.017 7.781 30.597-28.436 2.286-54.79-7.983-73.336-28.308z" fill="#454040"/>
-                        </g>
-                        <path d="m336.857 22.065c-6.144-6.791-17.426-2.445-17.426 6.713v126.378c0 53.62 43.088 97.088 96.239 97.088 53.151 0 96.239-43.468 96.239-97.088v-129.369c0-9.127-11.219-13.489-17.384-6.759l-36.407 39.739c-11.348 12.386-27.308 19.43-44.027 19.43-16.85 0-32.922-7.153-44.281-19.709z" fill="#1e1205"/>
+        <!-- Icon -->
+        <link rel="shortcut icon" href="assets/images/3-search-cat_icon-icons.com_76679.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div class="container d-flex justify-content-center">
+            <div class="options">
+                <div class="github">
+                    <a href="https://github.com/david123ramos/CatDown" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 logo" align="center"> 
+                    <svg class="imgMain" id="Layer_1" enable-background="new 0 0 511.909 511.909" height="512" viewBox="0 0 511.909 511.909" width="512" xmlns="http://www.w3.org/2000/svg">
                         <g>
                             <g>
-                                <ellipse cx="376.202" cy="134.643" fill="#ffd400" rx="15.015" ry="15.148"/>
-                                <ellipse cx="455.138" cy="134.643" fill="#ffa100" rx="15.015" ry="15.148"/>
+                                <path d="m414.661 426.387c.004 1.904 1.5 3.443 3.4 3.567 27.015 1.76 49.249 24.362 49.249 51.985v4.02c0 5.627-4.561 10.188-10.188 10.188h-42.626-188.957c-77.782 0-140.837-63.611-140.837-142.08 0-78.468 63.055-142.08 140.837-142.08h109.914c1.502 0 2.986-.332 4.345-.973l81.578-38.465c4.775-2.251 10.478-.482 13.141 4.076l35.867 55.58c-.393 42.796-16.984 82.772-45.891 112.061-6.388 6.472-9.983 15.192-9.963 24.285l.139 61.292" fill="#454040"/>
                             </g>
+                            <path d="m424.492 344.266c28.907-29.289 45.499-69.265 45.891-112.061l-35.867-55.58c-2.663-4.558-8.366-6.327-13.141-4.076l-81.578 38.465c-1.359.641-2.843.973-4.345.973h-89.124v284.16h210.794c5.626 0 10.188-4.561 10.188-10.188v-4.02c0-27.624-22.235-50.226-49.249-51.986-1.9-.124-3.396-1.663-3.4-3.567l.008 3.457-.139-61.292c-.021-9.093 3.575-17.813 9.962-24.285z" fill="#2d2211"/>
+                            <g>
+                                <path d="m25.119 382.346c-16.198-17.753-25.119-41.671-25.119-67.35v-104.192c0-40.187 32.469-72.88 72.378-72.88 22.864 0 41.467-18.827 41.467-41.968v-41.595c0-8.322 6.395-15.483 14.708-15.875 8.876-.418 16.203 6.654 16.203 15.438v42.032c0 40.186-32.469 72.879-72.378 72.879-22.865 0-41.467 18.828-41.467 41.969v104.192c0 17.951 6.052 34.47 17.042 46.515 11.071 12.133 25.843 18.546 42.721 18.546 13.386 0 22.797 17.017 7.781 30.597-28.436 2.286-54.79-7.983-73.336-28.308z" fill="#454040"/>
+                            </g>
+                            <path d="m336.857 22.065c-6.144-6.791-17.426-2.445-17.426 6.713v126.378c0 53.62 43.088 97.088 96.239 97.088 53.151 0 96.239-43.468 96.239-97.088v-129.369c0-9.127-11.219-13.489-17.384-6.759l-36.407 39.739c-11.348 12.386-27.308 19.43-44.027 19.43-16.85 0-32.922-7.153-44.281-19.709z" fill="#1e1205"/>
+                            <g>
+                                <g>
+                                    <ellipse cx="376.202" cy="134.643" fill="#ffd400" rx="15.015" ry="15.148"/>
+                                    <ellipse cx="455.138" cy="134.643" fill="#ffa100" rx="15.015" ry="15.148"/>
+                                </g>
+                            </g>
+                            <path d="m299.028 369.094c0-39.281-31.565-71.125-70.503-71.125h-132.412c-7.34 17.211-11.412 36.174-11.412 56.098 0 78.468 63.055 142.08 140.837 142.08h73.489v-127.053z" fill="#454045"/>
+                            <path d="m246.329 300.262v195.886h52.699v-127.054c0-33.075-22.382-60.874-52.699-68.832z" fill="#454040"/>
                         </g>
-                        <path d="m299.028 369.094c0-39.281-31.565-71.125-70.503-71.125h-132.412c-7.34 17.211-11.412 36.174-11.412 56.098 0 78.468 63.055 142.08 140.837 142.08h73.489v-127.053z" fill="#454045"/>
-                        <path d="m246.329 300.262v195.886h52.699v-127.054c0-33.075-22.382-60.874-52.699-68.832z" fill="#454040"/>
-                    </g>
-                </svg>
+                    </svg>
+                    <h3><span>Cat</span>Down</h3>
+                </div>
+                <div class="col-12">
+                    <div class="main">
+                        <form class="form-inlineC" autocomplete="off">
+                            <input type="url" id="url" name="url" placeholder="Insira uma URL aqui..." required>
+                            <button type="submit" id="send" class="btn btn-find"><i class="fas fa-download"></i></button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <div class="main">
-            <form class="form-inlineC" >
-                <input type="url" id="url" name="url">
-                <button type="submit" id="send" class="btn btn-find">Buscar</button>
-            </form>
-            
-        </div>
-    </div>
-    <script src="main.js"></script>
-</body>
+        
+        <!-- JS, Popper.js, and jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+        <script src="main.js"></script>
+    </body>
 </html>
