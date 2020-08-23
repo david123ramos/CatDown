@@ -4,10 +4,7 @@ const APIcred = {
 
 document.querySelector("#send").addEventListener("click", function(e) {
     let url = document.querySelector("#url").value;
-    let type = document.querySelector("#type").value;
-    let query = `/download?type=${type}&URL=${url}`;
-
-
+    let query = `/download?type=${ getHost(url) }&URL=${url}`;
     if (query != '') {
         e.preventDefault();
 
@@ -16,6 +13,16 @@ document.querySelector("#send").addEventListener("click", function(e) {
         document.querySelector("#url").value = '';
     }
 });
+
+/**
+ * 
+ * @param {String} url link do vídeo 
+ * @returns {String} host  
+ */
+function getHost( url ){
+    return new URL(url).host.split(".")[1]
+}
+
 
 function send(query) {
     window.location.href = APIcred.url+query; 
