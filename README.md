@@ -33,7 +33,9 @@ cd backend/ && npm install
 
 3. Abra o arquivo index.html na pasta *"frontend/"* em seu navegador de preferência;
 
-4. Insira o link do vídeo do **Youtube** e seja feliz ;) 😊
+4. Insira o link do vídeo do **Youtube** ou **Facebook** e selecione o site de origem abaixo;
+
+5. Clique no botão de download e seja feliz 😊
 
 ## 💻 Modo CLI
 

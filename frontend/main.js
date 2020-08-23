@@ -1,9 +1,12 @@
 const APIcred = {
-    url :  "http://localhost:4000/download?URL="
+    url :  "http://localhost:4000"
 }
 
 document.querySelector("#send").addEventListener("click", function(e) {
-    var query = document.querySelector("#url").value;
+    let url = document.querySelector("#url").value;
+    let type = document.querySelector("#type").value;
+    let query = `/download?type=${type}&URL=${url}`;
+
 
     if (query != '') {
         e.preventDefault();

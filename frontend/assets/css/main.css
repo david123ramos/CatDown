@@ -145,6 +145,12 @@ body {
   outline: none !important;
 }
 
+select {
+  padding: 0.2rem;
+  margin-top: 1.8rem;
+  border: none;
+}
+
 /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
 @media (max-width: 800px) {
   .form-inlineC {
