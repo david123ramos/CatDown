@@ -185,25 +185,6 @@ span.error {
   display: none;
 }
 
-.after-download-button {
-  display: none;
-  margin: 0 auto;
-  width: 180px;
-  text-align: center;
-  padding: 10px;
-  background: rgb(255, 212, 0);
-  text-decoration: none;
-  color: #707070;
-  border-radius: 5px;
-  transition: 0.3s ease;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
-}
-
-.after-download-button:hover {
-  text-decoration: none;
-  transform: scale(1.1);
-  color: #707070;
-}
 
 /* Progress Bar */
 .progress {
