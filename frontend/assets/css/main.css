@@ -92,7 +92,7 @@ body {
   height: 45px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
   border-radius: 20px;
-  margin-bottom: 200px;
+  
 }
 
 /* Style the input fields */
@@ -150,6 +150,99 @@ select {
   margin-top: 1.8rem;
   border: none;
 }
+  
+.main {
+  margin-bottom: 200px;
+}
+
+/* Error message */
+span.error {
+  display: block;
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  border-radius: 3px;
+  display: none;
+}
+
+.baixando {
+  display: none;
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  text-align: center;
+}
+
+.loading .baixando {
+  display: block;
+}
+
+
+.loading .after-download-button {
+  display: none;
+}
+
+.after-download-button {
+  display: none;
+  margin: 0 auto;
+  width: 180px;
+  text-align: center;
+  padding: 10px;
+  background: rgb(255, 212, 0);
+  text-decoration: none;
+  color: #707070;
+  border-radius: 5px;
+  transition: 0.3s ease;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 16%);
+}
+
+.after-download-button:hover {
+  text-decoration: none;
+  transform: scale(1.1);
+  color: #707070;
+}
+
+/* Progress Bar */
+.progress {
+  width: 100%;
+  max-width: 600px;
+  height: 10px;
+  background: #e1e4e8;
+  border-radius: 3px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+.progress .progress-bar {
+  display: block;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, right top, from(#ffd33d), color-stop(17%, #ea4aaa), color-stop(34%, #b34bff), color-stop(51%, #01feff), color-stop(68%, #ffd33d), color-stop(85%, #ea4aaa), to(#b34bff));
+  background: linear-gradient(90deg, #ffd33d, #ea4aaa 17%, #b34bff 34%, #01feff 51%, #ffd33d 68%, #ea4aaa 85%, #b34bff);
+  background-size: 300% 100%;
+  -webkit-animation: progress-animation 2s linear infinite;
+          animation: progress-animation 2s linear infinite;
+}
+
+@-webkit-keyframes progress-animation {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
+@keyframes progress-animation {
+  0% {
+    background-position: 100%;
+  }
+  100% {
+    background-position: 0;
+  }
+}
+
 
 /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
 @media (max-width: 800px) {
