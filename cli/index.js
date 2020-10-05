@@ -24,8 +24,8 @@ if (ytdl.validateURL(args.url)) {
   }
 
   const stream = ytdl(args.url, {
-    filter: format => format.container === 'mp4',
-    format: 'mp4',
+    filter: format => format.container === args.format,
+    format: args.format,
   })
 
   stream.pipe(output())

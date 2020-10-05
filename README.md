@@ -53,6 +53,7 @@ cd cli/ && npm install
  - Ajuda: ``node index.js --help``
  - Salvando em arquivo **.mp4**:  ``node index.js --url "https://www.youtube.com/watch?v=qrMwxe2ya5E" -o video.mp4``
  - Salvando com **stdout**: ``node index.js --url "https://www.youtube.com/watch?v=qrMwxe2ya5E" > video.mp4``
+ - Especificando formato: ``node index.js --url "https://www.youtube.com/watch?v=qrMwxe2ya5E" --format mp4``
  
 ### License
 ----
